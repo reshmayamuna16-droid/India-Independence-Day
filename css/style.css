@@ -1,0 +1,526 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #222;
+  background: #fff;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #ff9933 0%,
+    #ff9933 33%,
+    #fff 33%,
+    #fff 66%,
+    #138808 66%
+  );
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+  background: rgba(255,255,255,.85);
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
+.hero-content {
+  margin: auto;
+  text-align: center;
+  background: rgba(255,255,255,.85);
+  padding: 50px;
+  border-radius: 20px;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin: 15px 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+/* MINI INDIAN FLAG */
+
+.mini-flag {
+  display: inline-flex;
+  flex-direction: column;
+  width: 36px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mini-saffron {
+  height: 8px;
+  background: #ff9933;
+}
+
+.mini-white {
+  height: 8px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-green {
+  height: 8px;
+  background: #138808;
+}
+
+/* MINI ASHOKA CHAKRA */
+
+.mini-chakra {
+  width: 7px;
+  height: 7px;
+  border: 1px solid #000080;
+  border-radius: 50%;
+  position: relative;
+
+  background:
+    repeating-conic-gradient(
+      from 0deg,
+      #000080 0deg 8deg,
+      transparent 8deg 15deg
+    );
+
+  animation: mini-chakra-spin 6s linear infinite;
+}
+
+@keyframes mini-chakra-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.small-title {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 25px;
+  background: #138808;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+}
+
+/* SECTIONS */
+
+.section {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.light {
+  background: #f8f8f8;
+}
+
+/* TIMELINE */
+
+.timeline {
+  max-width: 850px;
+  margin: auto;
+}
+
+.timeline article {
+  border-left: 5px solid #138808;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: left;
+  background: #fff;
+  transition: .3s;
+}
+
+.timeline article:hover {
+  transform: translateX(10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.1);
+}
+
+.timeline span {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+/* FIGHTERS */
+
+.fighters {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    object-position: center 25%;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.card h3,
+.card p {
+  padding: 10px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover img {
+    transform: scale(1.03);
+}
+
+/* GALLERY */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: .4s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* FLAG */
+
+.flag-section {
+  background: #fafafa;
+}
+
+.flag {
+  width: 420px;
+  max-width: 90%;
+  margin: 30px auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.saffron,
+.white,
+.green {
+  height: 90px;
+}
+
+.saffron {
+  background: #ff9933;
+}
+
+.white {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green {
+  background: #138808;
+}
+
+.chakra {
+  width: 65px;
+  height: 65px;
+  border: 4px solid #000080;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 10s linear infinite;
+}
+
+.chakra::before,
+.chakra::after {
+  content: "";
+  position: absolute;
+  background: #000080;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.chakra {
+  width: 65px;
+  height: 65px;
+  border: 4px solid #000080;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 8s linear infinite;
+}
+
+/* Creates 24 spokes */
+.chakra::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+
+  background:
+    repeating-conic-gradient(
+      from 0deg,
+      #000080 0deg 2deg,
+      transparent 2deg 15deg
+    );
+
+  animation: rotate 8s linear infinite;
+}
+
+/* Center circle */
+.chakra::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #000080;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* UNITY */
+
+.unity {
+  background: linear-gradient(90deg,#ff9933,#fff,#138808);
+}
+
+/* FOOTER */
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 35px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 35px;
+}
+
+/* TWO FLAGS */
+
+.proud-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  margin: 0 0 12px 0;
+}
+
+/* MINI INDIAN FLAG */
+
+.mini-flag {
+  display: flex;
+  flex-direction: column;
+
+  width: 45px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+}
+
+/* SAFFRON */
+
+.mini-saffron {
+  height: 10px;
+  background: #ff9933;
+}
+
+/* WHITE */
+
+.mini-white {
+  height: 10px;
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* GREEN */
+
+.mini-green {
+  height: 10px;
+  background: #138808;
+}
+
+/* ASHOKA CHAKRA */
+
+.mini-chakra {
+  width: 8px;
+  height: 8px;
+
+  border: 1px solid #000080;
+  border-radius: 50%;
+
+  background:
+    repeating-conic-gradient(
+      from 0deg,
+      #000080 0deg 5deg,
+      transparent 5deg 15deg
+    );
+
+  animation: mini-chakra-spin 6s linear infinite;
+}
+
+/* CHAKRA ROTATION */
+
+@keyframes mini-chakra-spin {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+/* FOOTER TEXT */
+
+footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* RESPONSIVE WEBSITE*/
+
+@media (max-width: 900px) {
+
+  .fighters,
+  .gallery {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .fighters,
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    margin: auto 20px;
+    padding: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.4rem;
+  }
+
+}
