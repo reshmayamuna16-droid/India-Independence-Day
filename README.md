@@ -40,3 +40,13 @@ Created for the **Independence Day HTML & CSS Coding Contest – Credo Systemz**
 ---
 
 ⭐ If you like this project, consider giving the repository a **Star**!
+
+---
+
+<img width="939" height="412" alt="image" src="https://github.com/user-attachments/assets/f8f08b6a-841d-4904-9622-b845dd49d740" />
+<img width="943" height="415" alt="independence page 2 ss" src="https://github.com/user-attachments/assets/60f31506-4697-483c-8814-8a87cb4ed0bc" />
+<img width="941" height="407" alt="independence page 3 ss" src="https://github.com/user-attachments/assets/928f365b-8ca2-4a72-abea-6dad3023b8ee" />
+
+
+
+
